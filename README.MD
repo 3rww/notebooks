@@ -4,9 +4,23 @@
 
 ## Usage
 
-This repo has been setup so that notebooks can be interactively used on **mybinder.org**: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/3rww/notebooks/master)
+There are several ways to consume the documentation provided in this repository.
 
-If you want to use locally, follow the **Installation** and **Running Locally** instructions below.
+### Here on GitHub
+
+Documentation for various 3RWW data resources is provided in subfolders. You can view those notebooks directly on GitHub.
+
+### On `mybinder.org`
+
+This repository has also been setup so that the notebooks can be interactively used on `mybinder.org`
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/3rww/notebooks/master). 
+
+When you view the notebooks on `mybinder.org`, then know that is is an ephemeral, private, individual-to-you instance of the Notebook. Any edits you make or new cells you create will vanish when you close your browser. Use that space to explore a Jupyter Notebook environment with demo data & pre-loaded libraries ready for you to play with.
+
+### On your computer
+
+If you want to use these notebooks locally, follow the **Installation** and **Running Locally** instructions below.
 
 ## Installation
 

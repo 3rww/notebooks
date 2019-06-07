@@ -4,3 +4,6 @@ folium==0.9.1
 requests==2.22.0
 petl==1.2.0
 sortedcontainers==2.1.0
+rasterio
+boto3
+rasterstats

@@ -3,12 +3,13 @@ rainfall_downloader.py
 
 Download 3RWW's rainfall data archive.
 
-requirements (via pip)
+requirements (install via pip):
 
 click
 boto3
 requests
 python-dateutil
+tqdm
 
 """
 
@@ -19,6 +20,7 @@ import requests
 from datetime import datetime
 from dateutil.rrule import rrule, MONTHLY
 from dateutil.parser import parse as parse_date
+from tqdm import tqdm
 
 # Constants
 BUCKET_NAME = "trww-rainfall-prod-3rww-datastore-558340784565"
@@ -45,7 +47,7 @@ def generate_s3_keys(date_range, ids, data_type):
 
 def download_from_s3(keys_with_meta, destination_folder="."):
     downloaded = []
-    for key, data_type, id_, year, month in keys_with_meta:
+    for key, data_type, id_, year, month in tqdm(keys_with_meta):
         try:
             obj = s3.get_object(Bucket=BUCKET_NAME, Key=key)
 
